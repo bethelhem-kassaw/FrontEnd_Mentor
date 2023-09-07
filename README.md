@@ -13,11 +13,11 @@ This repository is organized into folders, each representing a specific challeng
 
 Here is a list of challenges I have completed so far:
 
-1. Challenge 1: [Example Challenge Title](link-to-challenge-repo)
+1. Challenge 1:[ newbie qr code design challange](link-to-challenge-repo)
    - Description: Brief description of the challenge and key features implemented.
    - Live Demo: [Link to Live Demo](link-to-live-demo)
 
-2. Challenge 2: [Example Challenge Title](link-to-challenge-repo)
+2. Challenge 2: [Mobile and Desktop Html css and js](link-to-challenge-repo)
    - Description: Brief description of the challenge and key features implemented.
    - Live Demo: [Link to Live Demo](link-to-live-demo)
 
