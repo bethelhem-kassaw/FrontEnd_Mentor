@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <script src="./index.js"></script>
     <link rel="stylesheet" type="text/css" href="./index.css">
     <link
       rel="icon"
@@ -27,36 +26,40 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    <form id="ageForm" class="container">
       <div class="middle_container">
-        <div class="input_container">
+        <div id="dateForm" class="input_container">
           <div class="input_write">
-            <label>Day</label>
-            <input type="number" id="day" name="day"/>
+            <label id="labeld">Day</label>
+            <input type="number" id="dayInput" name="day" />
 
           </div>
           <div class="input_write">
-            <label>MONTH</label>
-            <input type="number" id="month" name="month"/>
+            <label id="labelm">MONTH</label>
+            <input type="number" id="monthInput" name="month" />
 
           </div>
           <div class="input_write">
-            <label>YEAR</label>
-            <input type="number" id="year" name="year"/>
+            <label id="labely">YEAR</label>
+            <input type="numbery" id="yearInput" name="year"/>
           </div>
+        </div>
+        <div id="errorContainer">
+
         </div>
         <div class="divider_container">
           <div class="divider"></div>
-          <div class="arrow">
+          <button type="submit" class="arrow">
             <img
               src="./assets/images/icon-arrow.svg"
               alt=""
               width="25"
               height="25"
             />
-          </div>
+          </button >
         </div>
-        <div class="age_result_container">
+        
+        <div id="resultContainer" class="age_result_container">
           <div class="result">
             <h1>--</h1>
             <p>years</p>
@@ -71,6 +74,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </form>
+    <div id=" errorContainer"></div>
+<!-- <div id="resultContainer"></div> -->
+    <script src="index.js"></script>
+
   </body>
 </html>
