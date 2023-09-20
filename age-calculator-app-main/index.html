@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="stylesheet" type="text/css" href="./index.css">
     <link
       rel="icon"
       type="image/png"
@@ -22,161 +22,44 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        font-family: "Poppins", sans-serif;
-       width: 100%;
-       
-        background-color: hsl(0, 0%, 95%);
-        overflow: hidden;
-
-        height: 100vh;
-       
-        overflow: hidden;
-        
-      }
-      .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 5px 5px 5px 5px hsl(0, 0%, 86%);
-        background-color: hsl(0, 0%, 86%);
-        width: 70%;
-        height: 85%;
-        
-        
-      }
-      .middle_container {
-        background-color: hsl(0, 0%, 100%);
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        box-shadow: 5px 5px 5px 5px hsl(0, 0%, 86%);
-        border-radius: 20px 20px 140px 20px;
-        padding: 40px;
-      }
-      .input_container {
-        display: flex;
-        flex-direction: row;
-        justify-content: baseline;
-        gap: 15px;
-      }
-      .input_write {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-      }
-      label {
-        font-family: "Poppins", sans-serif;
-        font-weight: 600;
-        color: hsl(0, 1%, 44%);
-        font-size: 14px;
-      }
-      input {
-        border-radius: 5px;
-        border: 1px solid hsl(0, 0%, 86%);
-
-    
-        font-family: "Poppins", sans-serif;
-        font-weight: 600;
-        color: black;
-        width: 80px;
-        font-size: 32px;
-      }
-      input:focus{
-        
-        outline: none;
-      }
-      .divider_container {
-        display: flex;
-
-        align-items: center;
-        justify-content: center;
-      }
-      .divider {
-        background-color: hsl(0, 0%, 86%);
-        height: 1px;
-        width: 350px;
-      }
-      .arrow {
-        background-color: hsl(259, 100%, 65%);
-        border-radius: 50%;
-       width: 40px;
-       height: 40px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-      }
-      .age_result_container {
-        display: flex;
-        flex-direction: column;
-      }
-      .result {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        /* gap: 2px; */
-        margin: 0;
-
-        padding: 0;
-      }
-      h1 {
-        font-family: "Poppins", sans-serif;
-        font-weight: 800;
-        color: hsl(259, 100%, 65%);
-        font-size: 70px;
-        font-style: italic;
-        margin: 0;
-        padding: 0;
-        line-height: 0;
-      }
-      p {
-        font-family: "Poppins", sans-serif;
-        font-weight: 800;
-        color: black;
-        font-size: 60px;
-        font-style: italic;
-        margin: 0;
-        padding: 0;
-        line-height: 1.2;
-      }
+      
     </style>
   </head>
   <body>
-    <div class="container">
+    <form id="ageForm" class="container">
       <div class="middle_container">
-        <div class="input_container">
+        <div id="dateForm" class="input_container">
           <div class="input_write">
-            <label>Day</label>
-            <input type="number" id="day" name="day"/>
+            <label id="labeld">Day</label>
+            <input type="number" id="dayInput" name="day" />
 
           </div>
           <div class="input_write">
-            <label>MONTH</label>
-            <input type="number" id="month" name="month"/>
+            <label id="labelm">MONTH</label>
+            <input type="number" id="monthInput" name="month" />
 
           </div>
           <div class="input_write">
-            <label>YEAR</label>
-            <input type="number" id="year" name="year"/>
+            <label id="labely">YEAR</label>
+            <input type="numbery" id="yearInput" name="year"/>
           </div>
+        </div>
+        <div id="errorContainer">
+
         </div>
         <div class="divider_container">
           <div class="divider"></div>
-          <div class="arrow">
+          <button type="submit" class="arrow">
             <img
               src="./assets/images/icon-arrow.svg"
               alt=""
               width="25"
               height="25"
             />
-          </div>
+          </button >
         </div>
-        <div class="age_result_container">
+        
+        <div id="resultContainer" class="age_result_container">
           <div class="result">
             <h1>--</h1>
             <p>years</p>
@@ -191,6 +74,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </form>
+    <div id=" errorContainer"></div>
+<!-- <div id="resultContainer"></div> -->
+    <script src="index.js"></script>
+
   </body>
 </html>
